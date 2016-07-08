@@ -14,7 +14,7 @@
  */
 var pet = "turtle 🐢"
 
-
+// string
 
 
 
@@ -24,7 +24,7 @@ var pet = "turtle 🐢"
  */
 var petName: String?
 
-
+// string optional
 
 
 
@@ -33,7 +33,7 @@ var petName: String?
  ### 3. Currently, what is the _value_ of `petName`?
  */
 
-
+// nil
 
 
 
@@ -45,8 +45,8 @@ var petName: String?
 // write your code here
 
 
-
-
+petName = "PETNAME"
+// still string optional
 
 
 
@@ -55,8 +55,8 @@ var petName: String?
  */
 // write your code here
 
-
-
+print(petName)
+// Optional("PETNAME")
 
 
 
@@ -67,8 +67,12 @@ var petName: String?
 // write your code here
 
 
-
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name")
+}
+// Optional("PETNAME")
 
 
 
@@ -77,7 +81,11 @@ var petName: String?
  */
 // write your code here
 
-
+if petName != nil {
+    print(petName!)
+} else {
+    print("There is no pet name")
+}
 
 
 
@@ -89,6 +97,11 @@ var petName: String?
 var anotherPetName: String?
 // write your code here
 
+if anotherPetName != nil {
+    print(anotherPetName)
+} else {
+    print("The value of anotherPetName is nil")
+}
 
 
 
@@ -100,7 +113,11 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+if anotherPetName != nil {
+    print(anotherPetName!)
+} else {
+    print("anotherPetName has no value")
+}
 
 
 
@@ -113,9 +130,11 @@ var anotherPetName: String?
  */
 // write your code here
 
+let constant: String?
+constant = "foo"
+print(constant)
 
-
-
+//Optional("foo")
 
 
 
@@ -126,7 +145,9 @@ var anotherPetName: String?
  */
 // write your code here
 
-
+var const: String? = nil
+const = "foo"
+// need to be VAR to reassign value
 
 
 
